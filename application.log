@@ -172,3 +172,30 @@
 2023-04-18T21:28:26.333+05:30  INFO 5300 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2023-04-18T21:28:26.346+05:30  INFO 5300 --- [restartedMain] c.b.A.AddressBookAppApplication          : Started AddressBookAppApplication in 5.7 seconds (process running for 6.327)
 2023-04-18T21:28:26.350+05:30  INFO 5300 --- [restartedMain] c.b.A.AddressBookAppApplication          : Application was successfully started
+2023-04-18T21:36:31.371+05:30  INFO 5300 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-18T21:36:31.377+05:30  INFO 5300 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-18T21:36:31.388+05:30  INFO 5300 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-18T21:36:34.929+05:30  INFO 19276 --- [restartedMain] c.b.A.AddressBookAppApplication          : Starting AddressBookAppApplication using Java 20 with PID 19276 (D:\java spring boot\AddressBookApp\target\classes started by Deepthi in D:\java spring boot\AddressBookApp)
+2023-04-18T21:36:34.933+05:30  INFO 19276 --- [restartedMain] c.b.A.AddressBookAppApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-18T21:36:35.006+05:30  INFO 19276 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-18T21:36:35.007+05:30  INFO 19276 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-18T21:36:35.992+05:30  INFO 19276 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-18T21:36:36.065+05:30  INFO 19276 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interfaces.
+2023-04-18T21:36:36.978+05:30  INFO 19276 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-04-18T21:36:36.993+05:30  INFO 19276 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-18T21:36:36.995+05:30  INFO 19276 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-18T21:36:37.058+05:30  INFO 19276 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-18T21:36:37.059+05:30  INFO 19276 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2052 ms
+2023-04-18T21:36:37.274+05:30  INFO 19276 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-18T21:36:37.319+05:30  INFO 19276 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-18T21:36:37.629+05:30  INFO 19276 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-18T21:36:37.986+05:30  INFO 19276 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e3b65e9
+2023-04-18T21:36:37.989+05:30  INFO 19276 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-18T21:36:38.063+05:30  INFO 19276 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-18T21:36:38.846+05:30  INFO 19276 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-18T21:36:38.858+05:30  INFO 19276 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-18T21:36:39.139+05:30  WARN 19276 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-18T21:36:39.585+05:30  INFO 19276 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-18T21:36:39.637+05:30  INFO 19276 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-18T21:36:39.649+05:30  INFO 19276 --- [restartedMain] c.b.A.AddressBookAppApplication          : Started AddressBookAppApplication in 5.314 seconds (process running for 5.923)
+2023-04-18T21:36:39.654+05:30  INFO 19276 --- [restartedMain] c.b.A.AddressBookAppApplication          : Application was successfully started
