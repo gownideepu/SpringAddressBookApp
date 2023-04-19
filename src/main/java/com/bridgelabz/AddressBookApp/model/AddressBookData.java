@@ -21,6 +21,7 @@ public class AddressBookData {
     private String state;
     private String contactNumber;
     private int zip;
+    private String Email;
     public AddressBookData(AddressBookDto addressBookDto) {
         this.updateAddressBookData(addressBookDto);
     }
@@ -31,6 +32,7 @@ public class AddressBookData {
         this.state=addressBookDto.getState();
         this.contactNumber=addressBookDto.getContactNumber();
         this.zip=addressBookDto.getZip();
+        this.Email=addressBookDto.getEmail();
     }
 
 }

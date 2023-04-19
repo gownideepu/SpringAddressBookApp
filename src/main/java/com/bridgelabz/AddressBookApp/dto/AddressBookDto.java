@@ -17,7 +17,6 @@ public class AddressBookDto {
     private String state;
     @NotEmpty(message = "The Phone number is not empty")
     private String contactNumber;
+    private String Email;
     private int zip;
-
-
 }

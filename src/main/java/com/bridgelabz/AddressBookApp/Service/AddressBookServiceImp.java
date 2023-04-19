@@ -2,6 +2,7 @@ package com.bridgelabz.AddressBookApp.Service;
 
 import com.bridgelabz.AddressBookApp.Exception.AddressBookCustomException;
 import com.bridgelabz.AddressBookApp.Exception.AddressBookException;
+import com.bridgelabz.AddressBookApp.Util.EmailService;
 import com.bridgelabz.AddressBookApp.Util.JWTToken;
 import com.bridgelabz.AddressBookApp.dto.AddressBookDto;
 import com.bridgelabz.AddressBookApp.dto.ResponseDto;
@@ -20,12 +21,15 @@ public class AddressBookServiceImp implements AddressBookService {
     private MyRepository myRepository;
     @Autowired
     private JWTToken jwtToken;
+    @Autowired
+    private EmailService emailService;
 
     @Override
     public ResponseDto addAddress(AddressBookDto addressBookDto) {
         AddressBookData addressBookData = new AddressBookData(addressBookDto);
         myRepository.save(addressBookData);
         String token=jwtToken.createToken(addressBookData.getId());
+        emailService.sendEmail(addressBookDto.getEmail(),"The data added successfully ","hello  .."+addressBookDto.getName()+"\n your data added succsessfully");
         list.add(addressBookData);
         ResponseDto responseDto=new ResponseDto(token,addressBookData);
         return responseDto;
