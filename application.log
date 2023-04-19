@@ -1,0 +1,27 @@
+2023-04-19T14:56:55.128+05:30  INFO 20512 --- [restartedMain] c.b.A.AddressBookAppApplication          : Starting AddressBookAppApplication using Java 20 with PID 20512 (D:\java spring boot\AddressBookApp\target\classes started by Deepthi in D:\java spring boot\AddressBookApp)
+2023-04-19T14:56:55.139+05:30  INFO 20512 --- [restartedMain] c.b.A.AddressBookAppApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19T14:56:55.205+05:30  INFO 20512 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-19T14:56:55.206+05:30  INFO 20512 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-19T14:56:56.122+05:30  INFO 20512 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-19T14:56:56.227+05:30  INFO 20512 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 89 ms. Found 1 JPA repository interfaces.
+2023-04-19T14:56:57.077+05:30  INFO 20512 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-04-19T14:56:57.090+05:30  INFO 20512 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-19T14:56:57.090+05:30  INFO 20512 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-19T14:56:57.160+05:30  INFO 20512 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-19T14:56:57.160+05:30  INFO 20512 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1953 ms
+2023-04-19T14:56:57.413+05:30  INFO 20512 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-19T14:56:57.488+05:30  INFO 20512 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-19T14:56:57.849+05:30  INFO 20512 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19T14:56:58.336+05:30  INFO 20512 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3983befa
+2023-04-19T14:56:58.339+05:30  INFO 20512 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19T14:56:58.407+05:30  INFO 20512 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-19T14:56:59.295+05:30  INFO 20512 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-19T14:56:59.303+05:30  INFO 20512 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-19T14:56:59.708+05:30  WARN 20512 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-19T14:57:00.143+05:30  INFO 20512 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-19T14:57:00.184+05:30  INFO 20512 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-19T14:57:00.194+05:30  INFO 20512 --- [restartedMain] c.b.A.AddressBookAppApplication          : Started AddressBookAppApplication in 5.565 seconds (process running for 6.827)
+2023-04-19T14:57:00.200+05:30  INFO 20512 --- [restartedMain] c.b.A.AddressBookAppApplication          : Application was successfully started
+2023-04-19T14:58:52.054+05:30  INFO 20512 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-19T14:58:52.055+05:30  INFO 20512 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-19T14:58:52.058+05:30  INFO 20512 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
