@@ -13,5 +13,4 @@ public class AddressBookAppApplication {
 		ApplicationContext context=SpringApplication.run(AddressBookAppApplication.class, args);
 		log.info("Application was successfully started",context.getEnvironment().getProperty("spring.datasource.username"));
 	}
-
 }

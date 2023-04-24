@@ -16,23 +16,25 @@ public class AddressBookData {
     @GeneratedValue
     private int id;
     private String name;
-    private String address;
-    private String city;
-    private String state;
-    private String contactNumber;
-    private int zip;
+    private String phoneNumber;
     private String Email;
+    private String password;
+    private long otp;
+    private String token;
+    private boolean verifyotp;
     public AddressBookData(AddressBookDto addressBookDto) {
+
         this.updateAddressBookData(addressBookDto);
+    }
+    public AddressBookData(String token,long otp){
+        this.otp=otp;
+        this.token=token;
     }
     public void updateAddressBookData(AddressBookDto addressBookDto){
         this.name=addressBookDto.getName();
-        this.address=addressBookDto.getAddress();
-        this.city=addressBookDto.getCity();
-        this.state=addressBookDto.getState();
-        this.contactNumber=addressBookDto.getContactNumber();
-        this.zip=addressBookDto.getZip();
         this.Email=addressBookDto.getEmail();
+        this.password=addressBookDto.getPassword();
+        this.phoneNumber= addressBookDto.getPhoneNumber();
     }
 
 }

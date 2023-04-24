@@ -3,6 +3,7 @@ package com.bridgelabz.AddressBookApp.controller;
 import com.bridgelabz.AddressBookApp.Service.AddressBookService;
 import com.bridgelabz.AddressBookApp.dto.AddressBookDto;
 import com.bridgelabz.AddressBookApp.dto.ResponseDto;
+import com.bridgelabz.AddressBookApp.dto.Verification;
 import com.bridgelabz.AddressBookApp.model.AddressBookData;
 import jakarta.validation.Valid;
 import org.apache.el.parser.Token;
@@ -22,6 +23,7 @@ public class MyController {
     public ResponseDto addAddress(@Valid @RequestBody AddressBookDto addressBookDto){
        return addressBookService.addAddress(addressBookDto);
     }
+
     @GetMapping("/{id}")
     public ResponseDto getDataByid(@PathVariable int id){
         AddressBookData addressBookData = addressBookService.getAddressById(id);
@@ -52,6 +54,11 @@ public class MyController {
         ResponseDto responceDto = new ResponseDto("Data for the token is ",addressBookData);
         return new ResponseEntity<>(responceDto, HttpStatus.CREATED);
     }
-
-
+    @GetMapping("/DeletedData")
+    public ResponseDto getDeletedData(){
+        List<AddressBookData> data=addressBookService.getdeleteData();
+        ResponseDto responceDto=new ResponseDto("The data was deleted ",data);
+        return responceDto;
+    }
 }
+
